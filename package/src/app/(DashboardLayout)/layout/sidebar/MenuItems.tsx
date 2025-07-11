@@ -1,9 +1,16 @@
 import {
   IconAperture,
+  IconBox,
   IconCopy,
   IconLayoutDashboard,
   IconLogin,
+  IconMessage,
   IconMoodHappy,
+  IconPackageExport,
+  IconPackageImport,
+  IconPackageOff,
+  IconPackages,
+  IconReceiptDollar,
   IconTypography,
   IconUserPlus,
 } from "@tabler/icons-react";
@@ -24,9 +31,19 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Contact",
-    icon: IconLayoutDashboard,
+    title: "Contact Us",
+    icon: IconMessage,
     href: "/contact",
+  },
+  {
+    navlabel: true,
+    subheader: "FINANCES",
+  },
+  {
+    id: uniqueId(),
+    title: "Invoices",
+    icon: IconReceiptDollar,
+    href: "/invoices",
   },
   {
     navlabel: true,
@@ -34,16 +51,32 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Typography",
-    icon: IconTypography,
-    href: "/utilities/typography",
+    title: "Filled",
+    icon: IconBox,
+    href: "/filled",
   },
   {
     id: uniqueId(),
-    title: "Shadow",
-    icon: IconCopy,
-    href: "/utilities/shadow",
+    title: "Delivered",
+    icon: IconPackageExport,
+    href: "/delivered",
   },
+  {
+    id: uniqueId(),
+    title: "Returned",
+    icon: IconPackageImport,
+    href: "/returned",
+  },
+  {
+    id: uniqueId(),
+    title: "Cancelled",
+    icon:  IconPackageOff,
+    href: "/cancelled",
+  },
+
+
+ 
+  /*
   {
     navlabel: true,
     subheader: "AUTH",
@@ -60,21 +93,16 @@ const Menuitems = [
     icon: IconUserPlus,
     href: "/authentication/register",
   },
+  */
   {
     navlabel: true,
-    subheader: " EXTRA",
+    subheader: "INVENTORY",
   },
   {
     id: uniqueId(),
-    title: "Icons",
-    icon: IconMoodHappy,
-    href: "/icons",
-  },
-  {
-    id: uniqueId(),
-    title: "Sample Page",
-    icon: IconAperture,
-    href: "/sample-page",
+    title: "Products",
+    icon: IconPackages,
+    href: "/inventory",
   },
 
 ];
