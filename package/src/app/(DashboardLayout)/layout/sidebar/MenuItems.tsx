@@ -23,8 +23,14 @@ const Menuitems = [
     href: "/",
   },
   {
+    id: uniqueId(),
+    title: "Contact",
+    icon: IconLayoutDashboard,
+    href: "/contact",
+  },
+  {
     navlabel: true,
-    subheader: "UTILITIES",
+    subheader: "ORDERS",
   },
   {
     id: uniqueId(),
