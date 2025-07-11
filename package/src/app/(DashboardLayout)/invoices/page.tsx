@@ -92,7 +92,7 @@ const SamplePage = async () => {
                                 </TableCell>
                                 <TableCell>
                                     <Typography color="textSecondary" variant="subtitle2" fontWeight={400}>
-                                        ${data.charged}
+                                        {data.charged}
                                     </Typography>
                                 </TableCell>
                                 <TableCell>

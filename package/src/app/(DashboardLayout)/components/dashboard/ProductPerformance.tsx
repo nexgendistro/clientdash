@@ -47,6 +47,15 @@ const products = [
         pbg: "success.main",
         budget: "2.4",
     },
+    {
+        id: "5",
+        name: "",
+        post: "Frontend Engineer",
+        pname: "Hosting Press HTML",
+        priority: "Critical",
+        pbg: "success.main",
+        budget: "2.4",
+    },
 ];
 
 
@@ -66,14 +75,10 @@ const ProductPerformance = () => {
                         <TableRow>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Id
+                                    SKU
                                 </Typography>
                             </TableCell>
-                            <TableCell>
-                                <Typography variant="subtitle2" fontWeight={600}>
-                                    Assigned
-                                </Typography>
-                            </TableCell>
+                           
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
                                     Name
@@ -86,7 +91,7 @@ const ProductPerformance = () => {
                             </TableCell>
                             <TableCell align="right">
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Budget
+                                    Profit
                                 </Typography>
                             </TableCell>
                         </TableRow>
@@ -103,28 +108,6 @@ const ProductPerformance = () => {
                                     >
                                         {product.id}
                                     </Typography>
-                                </TableCell>
-                                <TableCell>
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            alignItems: "center",
-                                        }}
-                                    >
-                                        <Box>
-                                            <Typography variant="subtitle2" fontWeight={600}>
-                                                {product.name}
-                                            </Typography>
-                                            <Typography
-                                                color="textSecondary"
-                                                sx={{
-                                                    fontSize: "13px",
-                                                }}
-                                            >
-                                                {product.post}
-                                            </Typography>
-                                        </Box>
-                                    </Box>
                                 </TableCell>
                                 <TableCell>
                                     <Typography color="textSecondary" variant="subtitle2" fontWeight={400}>
