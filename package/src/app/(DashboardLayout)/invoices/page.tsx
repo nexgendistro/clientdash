@@ -80,10 +80,8 @@ const SamplePage = async () => {
                                                 {data.billingstart}
                                             </Typography>
                                             <Typography
-                                                color="textSecondary"
-                                                sx={{
-                                                    fontSize: "13px",
-                                                }}
+                                                variant='subtitle2'
+                                                fontWeight={600}
                                             >
                                                 {data.billingend}
                                             </Typography>
@@ -91,7 +89,7 @@ const SamplePage = async () => {
                                     </Box>
                                 </TableCell>
                                 <TableCell>
-                                    <Typography color="textSecondary" variant="subtitle2" fontWeight={400}>
+                                    <Typography color="textSecondary" variant="subtitle1" fontWeight={900}>
                                         {data.charged}
                                     </Typography>
                                 </TableCell>

@@ -73,9 +73,9 @@ const SidebarItems = () => {
 
   return (
     < >
-      <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#5D87FF"} themeSecondaryColor={'#49beff'} >
+      <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#ff5a00"} themeSecondaryColor={'#49beff'} >
 
-        <Logo img='/images/logos/dark-logo.svg' component={Link} to="/" >Modernize</Logo>
+        <Logo img='/images/logos/nexgenbar.png' component={Link} to="/" ></Logo>
 
         {renderMenuItems(Menuitems, pathDirect)}
         <Box px={2}>

@@ -50,7 +50,6 @@ const Dashboard = () => {
             <ProductPerformance />
           </Grid>
           <Grid size={12}>
-            <Blog />
           </Grid>
         </Grid>
       </Box>
